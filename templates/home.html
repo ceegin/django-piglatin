@@ -4,9 +4,11 @@
 </head>
 <body>
 <h1>Pig Latin Translator</h1>
-<form>
-    <input type="text"/></br>
+<form action="{% url 'translate' %}">
+    <input type="text" name="originaltext"/><br>
     <input type="submit" value="Translate!"/>
     </form>
+    <a href="{% url 'about' %}">About</a>
+</form>
 </body>
 </html>
